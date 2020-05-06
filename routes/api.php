@@ -18,4 +18,8 @@ Route::group(['middleware' => 'api', 'namespace' => 'Api'], function() {
     // -------------------- List movies --------------------    
     Route::get('movies','MovieListController@GetMovies');
     // --------------------
+
+    // -------------------- List genres --------------------    
+    Route::get('genres','MovieGenreController@GetGenres');
+    // --------------------
 });
